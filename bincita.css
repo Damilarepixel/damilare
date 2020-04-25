@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+:root {
+    --accent: rgb(161, 7, 7);
+    --light: #B4BFE3;
+    --lightText: #97A0BE;
+    --lighterText: #ffffff;
+    --dark: #0e0e0f;
+    --overlayStart:  rgba(22, 23, 90, 0.411);
+    --overlayEnd: rgba(55,55,86,.7);
+    --ease: all 0.9s ease 0s;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--dark);
+}
+
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    margin-bottom: 10em;
+}
+  
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+  
+ 
+
+
+h3,h4,h5, i {
+    color: var(--light);
+    font-family: 'poppins';
+    font-size: 25px;
+    font-weight: 350;
+    letter-spacing: 3px;
+    margin-bottom: 1em;
+}
+
+p, a {
+    color: var(--lighterText);
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'poppins';
+    letter-spacing: 1px;
+    line-height: 1.5em;
+}
+
+h3 {
+    font-family: "Work Sans",sans-serif;
+    font-size: 40px;
+    font-weight: 350;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 3em;
+}
+
+.underline {
+    text-decoration: none;
+    position: relative;
+
+}
+
+.underline:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    border-width: 1.5px;
+    border-style: solid;
+    color: #f5d107;
+    width: 30%;
+
+}
+
+.presentation {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 8em;
+    text-align: center;
+}
+
+.parag {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 50px;
+}
+
+.subsec {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    text-align: justify;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+#sub {
+    padding: 5px;
+}
+
+.research {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1.9em;
+    text-align: center;
+}
+
+.research:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+#user {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5em;
+    padding: 2em;
+    text-align: justify;
+    clear: both;  
+}
+
+
+
+.alignleft {
+    float: left;
+    width: 25%;
+}
+
+.alignright {
+    float: right;
+    width: 60%;
+    margin: 1em;
+    text-align: justify;
+}
+
+#bincita {
+    float: right;
+}
+
+#final {
+    margin: 1em;
+}
+
+.next {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 50px;
+}
+
+strong {
+    color: #f5d107;
+}
+
+#qs {
+    margin-top: 1em;
+}
+
+.italic {
+    padding: 0.5em;
+    margin-top: 0.5em;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+}
+
+.small {
+    font-size: 12px;
+    color: var(--lightText);
+}
+
+
+button {
+    margin-left: 1em;
+    text-align: center;
+    padding: 10px 25px;
+    font-family: 'Poppins';
+    font-size: 17px;
+    color: var(--lighterText);
+    background-color: transparent;
+    border: 1px solid var(--lighterText);
+    border-radius: 3px;
+    transition: var(--ease);
+    cursor: pointer;
+    outline: none;
+  }
+  
+  
+  button:hover {
+    background-color: var(--lighterText);
+    color: #000000;
+  }
+  
+
+
+@media only screen and (max-width:650px) {
+
+    .wrapper {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .alignleft {
+        display: none;
+    }
+
+    .presentation section {
+        display: block;
+        margin: 0px;
+        padding: 1em;
+    }
+
+    .research:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+
+    }
+    
+    
+    h3, h4, h5, p  {
+        display: block;
+        font-size: 15px;
+    }
+}
+
+
+
+
